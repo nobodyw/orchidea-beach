@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
-
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
@@ -35,5 +33,12 @@
   --border: 1px;
   --depth: 1;
   --noise: 0;
+}
+
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 30px;
 }
 
