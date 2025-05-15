@@ -15,6 +15,11 @@ const ongletFont = localFont({
 });
 const infoFont = localFont({
   src: "../../public/fonts/FuturaStdMedium.otf",
+  style: "italic"
+});
+const navFont = localFont({
+  src: "../../public/fonts/FuturaStdMedium.otf",
+  style: "normal"
 });
 
 
@@ -36,7 +41,7 @@ export default function RootLayout({
           ${titleH2.className} 
           ${ongletFont.className} 
           ${infoFont.className} 
-
+          ${navFont.className} 
           antialiased
           `}
       >

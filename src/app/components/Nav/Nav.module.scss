@@ -1,0 +1,41 @@
+.nav{
+    height: 120px;
+    padding: 0 50px;
+    background-color: #F3E984;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.burgerMenu{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.contact{
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .nav{
+        height: 200px;
+        align-items: flex-end;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 356px) {
+    .burgerMenu{
+        min-width: 68px;
+    }
+    .burgerMenu span{
+        display: none;
+    }
+    .nav{
+        font-size: 12px;
+    }
+}
