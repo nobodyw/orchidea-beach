@@ -3,9 +3,16 @@
     padding: 0 50px;
     background-color: #F3E984;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 16px;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+.navScrolled{
+    background-color: #000000ba;
+    color: #ffffff;
 }
 .burgerMenu{
     display: flex;
