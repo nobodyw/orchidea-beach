@@ -1,10 +1,10 @@
 "use client";
 import styles from "./Nav.module.scss";
 import Image from "next/image";
-import logoBlack from "../../../../public/assets/Logo/logoBlack.svg";
-import logoWhite from "../../../../public/assets/Logo/logoWhite.svg";
-import bmClose from "../../../../public/assets/Nav/bmClose.svg";
-import bmCloseWhite from "../../../../public/assets/Nav/bmCloseWhite.svg";
+import logoBlack from "@/../public/assets/Logo/logoBlack.svg";
+import logoWhite from "@/../public/assets/Logo/logoWhite.svg";
+import bmClose from "@/../public/assets/Nav/bmClose.svg";
+import bmCloseWhite from "@/../public/assets/Nav/bmCloseWhite.svg";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { navFont } from "@/app/fonts";
