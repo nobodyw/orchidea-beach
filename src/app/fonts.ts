@@ -5,7 +5,7 @@ export const titleH1 = localFont({
   style: "italic",
 });
 export const titleH2 = localFont({
-  src: "../../public/fonts/MinionPro-Semibold.otf",
+  src: "../../public/fonts/MinionPro-SemiboldIt.otf",
   style: "italic",
 });
 export const ongletFont = localFont({
@@ -18,4 +18,8 @@ export const infoFont = localFont({
 export const navFont = localFont({
   src: "../../public/fonts/FuturaStdMedium.otf",
   style: "normal"
+});
+export const futuraBook = localFont({
+  src: "../../public/fonts/FuturaStdBook.otf",
+  style: "normal",
 });
