@@ -1,7 +1,7 @@
 import chambre1 from "../../../../../public/assets/Categories/Chambres/chambre1.jpeg";
 import chambre2 from "../../../../../public/assets/Categories/Chambres/chambre2.jpeg";
-import chambre3 from "../../../../../public/assets/Categories/Chambres/chambre3.jpeg";
-import chambre4 from "../../../../../public/assets/Categories/Chambres/chambre4.jpeg";
+// import chambre3 from "../../../../../public/assets/Categories/Chambres/chambre3.jpeg";
+// import chambre4 from "../../../../../public/assets/Categories/Chambres/chambre4.jpeg";
 
 import restaurant1 from "../../../../../public/assets/Categories/Restaurant/restaurant1.jpeg";
 
