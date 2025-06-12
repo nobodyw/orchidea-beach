@@ -83,7 +83,11 @@ export default function Nav() {
           <span>Menu</span>
         </div>
 
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{ cursor: "pointer" }}
+        >
           {scrolled ? (
             <Image src={logoWhite} alt="Logo Orchidea Beach" />
           ) : (
