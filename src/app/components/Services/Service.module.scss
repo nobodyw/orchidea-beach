@@ -1,0 +1,46 @@
+.services{
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 20px;
+}
+.services h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+    color: #64401c;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.services h2::after{
+    content: "";
+    background-image: url("../../../../public/assets/Background/swooshService.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: -1;
+}
+.blockCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 0 20px;
+    height: 100%;
+}
+
+@media(max-width: 1024px){
+    .services{
+        height: auto;
+    }
+    .blockCards{
+        gap: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

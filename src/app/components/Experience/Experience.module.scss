@@ -1,0 +1,21 @@
+.experience{
+    background-color: rgba(243, 233, 132, 0.17);
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+.experience h2{
+    padding-top: 50px;
+    font-size: 36px;
+    letter-spacing: 6px;
+    text-transform: italic;
+    color: #4A4A4A;
+    text-align: center;
+}
+@media (max-width: 1024px){
+    .experience h2{
+        padding: 30px 20px 0;
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,245 @@
+.categories{
+  padding: 50px 0 0 50px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.categories button{
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 5s ease;
+}
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.active::after{
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  height: 10px;
+  background-color: rgba(174, 147, 100, 0.4);
+  animation: slideIn 0.5s ease-out; 
+  animation-fill-mode: forwards;
+}
+
+.containerEmbla{
+    padding-top: 50px;
+    display: flex;
+    width: 70vw;
+    margin: auto;
+}
+.embla {
+    overflow: hidden;
+    width: 100%;
+    margin-left: -20vw;
+    margin: 0 auto;
+    position: relative;
+}
+.embla__container {
+  display: flex;
+  height: 500px;
+}
+.embla__slide {
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; 
+  flex: 0 0 101%;
+  min-width: 0;
+}
+.embla__slide img {
+  margin-left: auto;
+  height: 500px; /* Définit la hauteur de l'image à 600px */
+  width: auto; /* Maintient les proportions de l'image */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.categoryDescription{
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 0px 4px 0px #00000082;
+  background-color: #f6f6e6;
+  padding: 30px;
+}
+.categoryDescription h3{
+  color: #64401c;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.categoryDescription p{
+  font-family: inter;
+  font-size: 16px;
+  color: #4A4A4A;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.categoryDescriptionSmall{
+  width: 70vw;
+  height: auto;
+  box-shadow: 0px 0px 4px 0px #00000082;
+  background-color: #f6f6e6;
+  margin: 2px auto 0;
+  display: none;
+}
+.categoryDescriptionSmall h3 {
+  padding-top: 10px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1.6;
+  color: #64401c;
+  text-align: center;
+}
+.categoryDescriptionSmall p {
+  font-family: inter;
+  font-size: 1rem;
+  color: #4A4A4A;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dot:hover {
+  background-color: #aaa;
+}
+.activeDot {
+  background-color: #64401c; /* Couleur active */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Place la modal au-dessus de tout */
+  cursor: pointer; /* Permet de fermer la modal au clic */
+}
+
+.modalContent {
+  width: 90vh;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.modalButton {
+  background-color: #64401c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modalButton:hover {
+  background-color: #4a4a4a;
+}
+
+@media (max-width: 1280px){
+  .categories{
+    justify-content: center;
+    padding: 50px 0 0 0;
+  }
+}
+@media (max-width: 1024px){
+  .embla__container, .embla__slide img{
+    height: 360px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .categories{
+    font-size: 16px;
+  }
+  .categoryDescription{
+    display: none;
+    padding: 0;
+  }
+  .categoryDescriptionSmall{
+    display: block;
+  }
+  .embla__slide img {
+    margin: auto;
+  }
+  .modalButton{
+    display: none;
+  }
+}
+@media (max-width: 600px){
+  .categories{
+    gap: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    padding-top: 50px;
+    height: auto !important;
+  }
+  .embla{
+    padding-top: 25px;
+  }
+  .emblaContainer, .embla__slide img, .embla__container{
+    height: auto !important;
+  }
+  .categories button {
+    width: auto; /* La largeur s'adapte au contenu */
+    display: inline-block; /* Permet au bouton de s'adapter à son contenu */
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+    margin: 0 auto; /* Centre le bouton horizontalement */
+  }
+  .active::after{
+    bottom: 1px;
+  }
+  .containerEmbla{
+    padding: 0;
+  }
+}

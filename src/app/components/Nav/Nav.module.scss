@@ -58,3 +58,79 @@
         display: none;
     }
 }
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modalSidebar {
+  background: #fff;
+  border-radius: 12px 0 0 12px;
+  padding: 15vh 32px;
+  min-width: 280px;
+  width: 400px;
+  height: 100vh;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+  color: #222;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.modalSidebar a {
+  color: #64401c;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  position: relative;
+}
+.active::after{
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  height: 10px;
+  background-color: rgba(174, 147, 100, 0.4);
+  animation: slideIn 0.5s ease-out; 
+  animation-fill-mode: forwards;
+  width: 100% !important;
+  z-index: 1 !important;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

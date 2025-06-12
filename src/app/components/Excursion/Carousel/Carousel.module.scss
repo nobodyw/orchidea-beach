@@ -1,0 +1,93 @@
+.carouselWrapper{
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    padding: 0 10%;
+    border-radius: 5px;
+}
+
+.embla {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .embla__container {
+    display: flex;
+    margin: auto;
+  }
+  .embla__slide {
+    flex: 0 0 101%;
+    min-width: 0;
+  }
+  .embla__slide img {
+    width: 100%;
+    height: 500px !important;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 5px !important;
+  }
+  .embla__slide button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #64401c;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .embla__slide button:hover {
+    background-color: #7a4c2b; /* Couleur au survol */
+  }
+
+  .carouselContent{
+    min-height: 150px;
+    height: auto;
+    background: #FFFFFF;
+    color: #64401c;
+    padding: 25px;
+    box-shadow: 5px 0px 0px 3px #0000001a;
+    border-radius: 5px;
+  }
+  .carouselContent h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .carouselContent p{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
+    background-color: #aaa;
+  }
+  
+  .activeDot {
+    background-color: #64401c; /* Couleur active */
+  }
+
+  @media(max-width: 640px){
+    .embla__slide img{
+      height: 300px!important;
+    }
+  }
