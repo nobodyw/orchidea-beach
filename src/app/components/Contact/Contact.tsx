@@ -39,11 +39,11 @@ export default function Contact() {
               alt="Icone Téléphone"
               className={styles.iconeTelephone}
             />
-            <a href="tel:+261320438377">++261320438377</a>
+            <a href="tel:+261320438377">+261320438377</a>
           </div>
           <div className={styles.hrContact} />
           <div className={styles.email}>
-            <a href="mailto:Hotel@gmail.com">Hotel@gmail.com</a>
+            <a href="mailto:Hotel@gmail.com">ORCHIDEABEACH2@GMAIL.COM</a>
           </div>
         </div>
       </motion.div>
