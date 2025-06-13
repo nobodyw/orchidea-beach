@@ -20,7 +20,7 @@ export default function Footer() {
         <a href="tel:+261320438377" className={`${styles.footerLink} ${navFont.className}`}>
         <div className={styles.footerContactInfo}>
             <span className={styles.telNumber}>
-                <Image src={iconeTelpehone} alt="Icone Téléphone"/> +21395516123
+                <Image src={iconeTelpehone} alt="Icone Téléphone"/>+261320438377
             </span>
         </div>
         <p className={`${styles.endText} ${futuraBook.className}`}>Réservez dès maintenant</p>
