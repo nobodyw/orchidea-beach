@@ -43,7 +43,7 @@ export default function Contact() {
           </div>
           <div className={styles.hrContact} />
           <div className={styles.email}>
-            <a href="mailto:Hotel@gmail.com">ORCHIDEABEACH2@GMAIL.COM</a>
+            <a href="mailto:ORCHIDEABEACH2@GMAIL.COM">ORCHIDEABEACH2@GMAIL.COM</a>
           </div>
         </div>
       </motion.div>
