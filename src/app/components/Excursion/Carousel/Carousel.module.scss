@@ -15,7 +15,7 @@
     margin: auto;
   }
   .embla__slide {
-    flex: 0 0 105%;
+    flex: 0 0 101%;
     min-width: 0;
   }
   .embla__slide img {
@@ -88,5 +88,9 @@
   @media(max-width: 640px){
     .embla__slide img{
       height: 300px!important;
+    }
+    .embla__slide {
+      flex: 0 0 105%;
+      min-width: 0;
     }
   }
