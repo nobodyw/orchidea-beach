@@ -48,7 +48,7 @@
     display: flex;
     gap: 25px;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-top: 30px;
 }
@@ -61,8 +61,8 @@
     left: -25px;
 }
 .hrContact{
-    width: 2px;
-    height: 66px;
+    width: 30%;
+    height: 1px;
     background-color: #64401C;
 }
 
@@ -108,10 +108,6 @@
         flex-direction: column;
         gap: 50px;
     }
-    .hrContact{
-        width: 50%;
-        height: 2px;
-    }
 }
 
 @media (max-width: 600px){
@@ -137,5 +133,14 @@
 @media (max-width: 469px){
     .contact h3, .contacts{
         font-size: 22px;
+    }
+    .email{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px){
+    .email{
+        font-size: 12px;
     }
 }
