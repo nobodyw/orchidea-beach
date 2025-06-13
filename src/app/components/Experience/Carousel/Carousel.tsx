@@ -86,13 +86,7 @@ export default function CarouselExperience() {
       {/* Carrousel des images */}
       <div className={styles.containerEmbla}>
         <div className={styles.embla} ref={emblaRef}>
-          <motion.div
-            key={selectedCategory}
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className={styles.embla__container}
-          >
+          <div className={styles.embla__container}>
             {categories[selectedCategory].images.map((image, index) => (
               <div className={styles.embla__slide} key={index}>
                 <Image
@@ -102,14 +96,23 @@ export default function CarouselExperience() {
                 />
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Description de la catégorie sélectionnée */}
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 2 }}
+          drag={false}
+          onPanEnd={(event, info) => {
+            if (info.offset.x < -50 && selectedIndex < categories[selectedCategory].images.length - 1) {
+              emblaApi?.scrollTo(selectedIndex + 1);
+            } else if (info.offset.x > 50 && selectedIndex > 0) {
+              emblaApi?.scrollTo(selectedIndex - 1);
+            }
+          }}
+          style={{ cursor: 'pointer' }}
         >
           <div className={styles.categoryDescription}>
             <h3 className={ongletFont.className}>
