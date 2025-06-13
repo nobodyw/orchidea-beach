@@ -13,7 +13,7 @@ import plage1 from "../../../../../public/assets/Categories/Plage/plage1.jpeg";
 export const categories = [
     {
       name: "Chambre",
-      description: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      description: "Profitez du confort de nos chambres spacieuses, décorées avec soin et équipées pour un séjour relaxant. Chaque chambre offre une vue apaisante et un cadre idéal pour se ressourcer après une journée à la plage ou d’excursion.",
       images: [
         chambre1,
         chambre2,
@@ -23,14 +23,14 @@ export const categories = [
     },
     {
       name: "Restaurant",
-      description: "Texte restaurant",
+      description: "Savourez une cuisine locale et internationale dans notre restaurant lumineux. Nos chefs sélectionnent des produits frais pour vous offrir des plats gourmands, à déguster dans une ambiance conviviale face à la mer.",
       images: [
         restaurant1,
       ],
     },
     {
       name: "Massage",
-      description: "Texte massage",
+      description: "Offrez-vous un moment de détente absolue avec nos massages bien-être. Nos praticiens expérimentés vous accueillent dans un espace zen pour des soins relaxants, parfaits pour relâcher toutes les tensions.",
       images: [
         massage1,
         massage2,
@@ -38,7 +38,7 @@ export const categories = [
     },
     {
       name: "Plage",
-      description: "Texte plage",
+      description: "Accédez directement à une plage de sable fin, idéale pour la baignade, le farniente ou les balades au coucher du soleil. Un cadre naturel préservé pour profiter pleinement de l’océan Indien.",
       images: [
         plage1,
       ],
